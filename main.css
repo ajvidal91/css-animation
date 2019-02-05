@@ -1,0 +1,181 @@
+h1 {
+  font-family: helvetica;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background: #36454f;
+}
+
+  .container-one {
+    width: 100%;
+    height: 400px;
+    margin: 100px auto;
+    border: 1px solid #dd6808;
+    transition: transform 5s;
+}
+
+.container:hover {
+    transform: skew(180deg, 180deg);
+    transform: rotateX(180deg, 180deg);
+}
+
+.box-one {
+    width: 200px;
+    height: 200px;
+    background-color: #33f;
+    border: 1px solid #53a014;
+    transition: background-color 5s;
+    transition: border-radius 5s;
+}
+
+.box-one:hover {
+    background-color: #f33;
+    border-radius: 50%;
+}
+
+
+
+/************^^^^ Messing around with hover, transitions, and transformations******************/
+/*******************************************************/
+
+.container-two{
+    width: 100%;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.box-two {
+    width: 200px;
+    height: 200px;
+    background-color: #33f;
+    transition: background-color 2s;
+}
+
+.box-two:hover {
+    background-color: #f33;
+}
+
+.box-three {
+    width: 200px;
+    height: 200px;
+    background-color: #33f;
+}
+
+.box-three:hover {
+    background-color: #f33;
+    width: 220px;
+    transition-duration: 1s;
+}
+
+/******^^^^ Messing with transition durations*******/
+/***************************************************/
+
+
+ .container-three{
+    width: 100%;
+    height: 200px;
+    margin: 10em auto;
+}
+
+.box-four {
+    width: 200px;
+    height: 200px;
+    background-color: #33f;
+    transition-property: background-color, transform,         transform width, border-radius;
+    transition-duration: 10s, 10s, 10s, 10s, 10s;
+    timing-function: step-start;
+}
+
+.box-four:hover {
+    background-color: #f33;
+    width: 400px;
+    transform: rotate(180deg);
+    transform: skew(180deg, 180deg);
+    border-radius: 50%;
+}
+
+/* ^^^durations and properties more in depth^^^  */
+/*************************************************/
+
+   .container-four{
+    width: 100%;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.box-five {
+  width: 200px;
+  height: 200px;
+  background-color: #111266;
+  transition-property: background-color, border-radius,     margin top, margin-left, padding;
+  transition-duration: 5s, 5s, 5s, 5s, 5s;
+  transition-timing-function: ease-in-out(5, 5, 5, 5);
+}
+
+.box-five:hover {
+  background-color: #6b0000;
+  border-radius: 50%;
+  margin-top: 350px;
+  margin-left: 200px;
+  padding:250px;
+  border: 4mm dashed rgb(145, 126, 2, .6);
+  transform: rotate(360deg);
+   transition-delay: 1.5s;
+}
+
+/*transition-timing-function css code above*coolest one* *^^^^*/
+
+/***********************************************/
+
+.container-six{
+   width: 100%;
+   height: 400px;
+   margin: 100px auto;
+}
+
+.box-six {
+  width: 200px;
+  height: 200px;
+  background-color: #33f;
+  transition-property: background-color;
+  transition-duration: 5s;
+  transition-timing-function: steps(5, start);
+  transition-delay: -2s; */
+  transition: background-color 2s ease-in 0.5s, width 3s ease-out 0.25s; */
+  /*transition shorthand property above ^^^^*/
+ /* transition: background-color 2s ease-in;*/
+}
+
+.box-six:hover {
+  background-color: #f33;
+  transition: background-color 5s ease-out;
+}
+
+/* ^^^ transition shorthand property and ease in & ease out properties CSS code ^^^
+/***************************************************/
+
+ .container-five{
+    width: 100%;
+    height: 400px;
+    margin: 100px auto;
+}
+
+.box-seven {
+    margin: 0 0 100px 0;
+    width: 200px;
+    height: 200px;
+    background-color: #33f;
+}
+
+#one {
+  transition: background-color 2s ease-in-out;
+}
+
+#one:hover {
+    background-color: #f33;
+}
+
+/* transition event css code  */
